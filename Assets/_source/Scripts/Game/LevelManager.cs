@@ -1,5 +1,3 @@
-using Neo;
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -50,7 +48,7 @@ public class LevelManager : MonoBehaviour
 
     public void WinLevel()
     {
-        if(_currentLevel == _level)
+        if (_currentLevel == _level)
         {
             _level++;
             Save();

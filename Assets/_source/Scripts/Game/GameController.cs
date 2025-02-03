@@ -40,6 +40,11 @@ public class GameController : Singleton<GameController>
 
     }
 
+    public void ChangePage(int page)
+    {
+        Time.timeScale = page == 0 ? 1 : 0;
+    }
+
     //устанавливает нужный уровень
     public void SetGame()
     {

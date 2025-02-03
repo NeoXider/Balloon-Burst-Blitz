@@ -34,10 +34,13 @@ public class ScaleAnimator : MonoBehaviour
             _initialScale : Vector3.one * _targetScale;
 
         float progress = 0f;
+        float elapsedTime = 0;
 
         while (progress < 1f)
         {
-            progress += Time.deltaTime / _duration;
+            elapsedTime += Time.unscaledDeltaTime;
+            progress = elapsedTime / _duration;
+
             transform.localScale = Vector3.Lerp(
                 startScale,
                 endScale,

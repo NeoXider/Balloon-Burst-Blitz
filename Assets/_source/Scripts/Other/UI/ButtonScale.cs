@@ -55,7 +55,7 @@ public class ButtonScale : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         while (elapsedTime < resizeDuration)
         {
             _rectTransform.localScale = Vector2.Lerp(initialSize, targetSize, elapsedTime / resizeDuration);
-            elapsedTime += Time.deltaTime;
+            elapsedTime += Time.unscaledDeltaTime;
             yield return null;
         }
 

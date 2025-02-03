@@ -3904,7 +3904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146466729301887920, guid: 734b85d2462dd4a4fa6637d11a14bee8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2146466729301887920, guid: 734b85d2462dd4a4fa6637d11a14bee8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4739,6 +4739,7 @@ MonoBehaviour:
   _levelManager: {fileID: 903148088}
   _prize: {fileID: 794585586}
   _time: 15
+  winTimer: 0
 --- !u!1001 &893357624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5713,7 +5714,19 @@ MonoBehaviour:
   _animator: {fileID: 0}
   OnChangePage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 867852861}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: ChangePage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnStartPage:
     m_PersistentCalls:
       m_Calls: []
@@ -8050,7 +8063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2146466729301887920, guid: 734b85d2462dd4a4fa6637d11a14bee8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2146466729301887920, guid: 734b85d2462dd4a4fa6637d11a14bee8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

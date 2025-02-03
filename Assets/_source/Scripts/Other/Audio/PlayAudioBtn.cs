@@ -7,7 +7,6 @@ public class PlayAudioBtn : MonoBehaviour
     private int _idClip = 0;
 
     [SerializeField]
-    [GetComponent]
     private Button _button;
 
     private void OnEnable()
@@ -25,5 +24,10 @@ public class PlayAudioBtn : MonoBehaviour
     public void AudioPlay()
     {
         AM.Instance.Play(_idClip);
+    }
+
+    private void OnValidate()
+    {
+        _button ??= GetComponent<Button>();
     }
 }
